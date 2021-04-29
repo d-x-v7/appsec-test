@@ -1,0 +1,7 @@
+The goal of this challenge is to assess how you resolve vulnerabilities within a docker image.The dockerfile builds into a docker image that contains the following vulnerabilities.
+
+    CVE-2018-18074
+      This vulnerability pertains to the dependency for "requests" and is classified as Information Exposure. Upon receiving a same-hostname https-to-http redirect, it sends the HTTP Authorization header to an http URI. This makes it easier for remote attackers to discover credentials by sniffing the network. NVD (National Vulnerability Database) states that this vulnerability affects Requests package before 2.20.0. We can see in the requirements.txt file that the version is "requests==2.19.0". Updating the version to 2.20.0 will remediate this vulnerability.
+        Source: https://nvd.nist.gov/vuln/detail/CVE-2018-18074
+    CVE-2018-100517
+    CVE-2018-12699
