@@ -1,5 +1,5 @@
 beautifulsoup4==4.7.1
 fastapi==0.10.2
-# requests==2.19.0 - changed to 2.20.0 to remediate vulnerability. 
+# requests==2.19.0 - changed to 2.20.0 to remediate vulnerability.
 requests==2.20.0
 email-validator==1.0.3

@@ -2,6 +2,8 @@ FROM alpine:3.8
 
 RUN apk add --no-cache libressl-dev musl-dev libffi-dev gcc g++ make libpcap-dev bash git
 RUN apk add --no-cache python3
+# The line below adds the most recent version of BusyBox to the dockerfile, thus mitigating CVE-2018-100517
+RUN apk --update add busybox
 
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
