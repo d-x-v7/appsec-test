@@ -9,6 +9,6 @@ The goal of this challenge is to assess how you resolve vulnerabilities within a
         https://github.com/silinternational/mysql-backup-restore/pull/4
         https://debian-boot.debian.narkive.com/SkZ6aDZY/bug-902724-cve-2018-1000517
     CVE-2018-12699
-      This vulnerability relates to the finish_stab in stabs.c in GNU Binutils 2.30 that can lead to a denial of service. Binutils version 2.35.2 is currently listed in the repositories (not sure where the vulnerability is coming from).
+      This vulnerability relates to the finish_stab in stabs.c in GNU Binutils 2.30 that can lead to a denial of service. Binutils version 2.35.2 is currently listed in the repositories, but exists in alpine 3.8. Simply building apline version 3.9 instead of 3.8 would likely alleviate this vulnerability. 
         Source: https://ubuntu.com/security/CVE-2018-12699
         https://github.com/gliderlabs/docker-alpine/issues/412
